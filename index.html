@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto - Challenge Oracle - Alura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Encriptador de texto - Challenge Oracle - Alura</h1>
+    </header>
+
+    <main>
+        <section>
+            <textarea id="inputText" placeholder="Escriba aquí el texto..." oninput="validateText()"></textarea>
+            <div class="buttons">
+                <button onclick="encryptText()">Encriptar</button>
+                <button onclick="decryptText()">Desencriptar</button>
+                <button onclick="copyText()">Copiar</button>
+            </div>
+            <div id="outputContainer">
+                <img id="placeholderImage" src="imagen.jpeg" alt="Imagen de marcador de posición">
+                <p id="outputText" style="display: none;"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollado por Fredy Rojas Flores</p>
+        <p><a href="https://www.linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a> | <a href="https://github.com/tu-github" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
